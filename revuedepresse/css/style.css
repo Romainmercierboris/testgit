@@ -1,0 +1,469 @@
+header,
+footer,
+body {
+    font-family: 'Space+Mono', monospace;
+}
+
+body {
+    background-image: url(../images/dog1.jpg);
+    -webkit-background-size: contain;
+    /* pour anciens Chrome et Safari */
+    background-size: contain;
+    /* version standardisée */
+    background-repeat: repeat;
+
+}
+
+#google_translate_element {
+    float: left;
+}
+
+.header {
+    display: block;
+    left: 0;
+    top: 0;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    z-index: 900;
+    margin-bottom: 10%;
+}
+
+.header span:nth-last-child(1) {
+    float: right;
+    padding-right: 20px;
+}
+
+.header-partie {
+    display: block;
+    left: 0;
+
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    z-index: 900;
+    margin-bottom: 10%;
+}
+
+
+.footer {
+    display: block;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 900;
+
+}
+
+
+#gif-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 90;
+}
+
+#blagues {
+    background-color: transparent;
+    z-index: 900;
+
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 75px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 99;
+
+}
+
+.flex-item {
+    background: rgba(255, 255, 255, 0.4);
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 4%;
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flex-item:hover {
+    background: white;
+}
+
+
+.text-titre {
+    padding: 8px;
+    padding-left: 20px;
+    line-height: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    overflow: hidden;
+    font-size: 200%;
+}
+
+.text-titre2 {
+    padding: 8px;
+    padding-left: 20px;
+    line-height: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    overflow: hidden;
+    font-size: 150%;
+    font-style: italic;
+    }
+
+.text-partie {
+    padding: 8px;
+    padding-left: 20px;
+    line-height: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header span:nth-last-child(1) {
+    padding-left: 25px;
+}
+
+.text-box {
+    padding-bottom: 4%;
+    height: 100px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5%;
+    margin: auto;
+}
+
+.text-box a {
+    padding: 0%;
+
+}
+
+.partie {
+    color: white;
+}
+
+.assez-lu {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 1px;
+    padding-right: 20px;
+    font-size: 100%;
+}
+
+.shop {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 1px;
+    padding-left: 20px;
+    font-size: 100%;
+}
+
+.start {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 100%;
+    }
+
+.text-box a:hover, .start:hover, .assez-lu:hover, .text-titre:hover, .shop:hover{
+    color: red;
+}
+
+.text p i {
+    color: red;
+}
+
+.text-marge-top {
+    width: auto;
+    height: 140px;
+    background: transparent;
+    margin-top: 1000px;
+}
+
+
+.text {
+    width: auto;
+    height: auto;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 8%;
+    z-index: 1000;
+    display: block;
+    padding-top: 4%;
+    line-height: 30px;
+    font-size: large;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+}
+
+.pic {
+    width: 50%;
+    height: auto;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 8%;
+    z-index: 1000;
+    display: block;
+    padding-top: 4%;
+    line-height: 30px;
+    font-size: large;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    
+}
+
+.pic img {
+    width: auto;
+    height: auto;
+}
+
+.remonter {
+    float: right;
+    font-size: 150%;
+    font-stretch: ultra-expanded;
+}
+
+.ital {
+    font-style: italic;
+}
+
+footer .far {
+    font-size: xx-large;
+}
+
+@media screen and (max-device-width: 1024px) {
+
+
+    .header {
+        padding-top: 5%;
+        height: 130px;
+
+    }
+
+    .footer {
+        padding-bottom: 15%;
+    }
+
+    .text-titre {
+        font-size: 500%;
+        line-height: 80px;
+
+    }
+
+    .remonter {
+        font-size: 350%;
+        font-stretch: ultra-expanded;
+    }
+
+    .start {
+        font-size: 300%;
+        line-height: 80px;
+    }
+
+    .assez-lu {
+        font-size: 200%;
+        line-height: 80px;
+
+    }
+
+
+}
+
+@media screen and (max-device-width: 800px) {
+    
+    body {
+       background-size: 200%;
+}
+
+    .flex-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 175px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 99;
+
+}
+
+.flex-item {
+    background: rgba(255, 255, 255, 0.4);
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 4%;
+    width: 100%;
+    height: 100px;
+    margin: 0%;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flex-item:hover {
+    background: white;
+}
+
+    .text-box a {
+        margin: auto;
+    }
+
+.text-marge-top {
+    width: auto;
+    height: 200px;
+    background: transparent;
+    margin-top: 10000px;
+}
+
+    .text {
+        width: auto;
+        height: auto;
+        background: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 8%;
+        z-index: 1000;
+        display: block;
+        padding-top: 4%;
+        line-height: 30px;
+        font-size: 110%;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+
+    .pic {
+        width: 80%;
+        height: auto;
+        background: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 8%;
+        z-index: 1000;
+        display: block;
+        padding-top: 4%;
+        line-height: 30px;
+        font-size: large;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .pic img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .start {
+        font-size: 220%;
+        font-stretch: condensed;
+        line-height: 80px;
+    }
+
+    .assez-lu {
+        font-size: 220%;
+        line-height: 80px;
+
+    }
+
+    .shop {
+        float: left;
+        padding: 60px;
+        padding-left: 20px;
+        font-size: 240%;
+    }
+
+}
+
+/**
+.text-box a{
+    font-size: xx-large;
+}
+
+#text1{
+    width: 80vw;
+    height: 100vh;
+    background-color: purple;
+    z-index: 1000;
+}
+
+#text1{display: none}
+
+#menu:checked #text1 {
+    display: block;
+  }
