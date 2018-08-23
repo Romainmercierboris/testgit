@@ -5,8 +5,7 @@ body {
 }
 
 body {
-    background-color: black;
-    /**background-image: url(../images/dog1.jpg);**/
+    background-image: url(../images/dog1.jpg);
     -webkit-background-size: contain;
     /* pour anciens Chrome et Safari */
     background-size: contain;
@@ -26,10 +25,9 @@ body {
     background-color: black;
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 75px;
     z-index: 900;
     margin-bottom: 10%;
-    padding-top: 1%;
 }
 
 .header span:nth-last-child(1) {
@@ -57,7 +55,7 @@ body {
     background-color: black;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 50px;
     z-index: 900;
 
 }
@@ -132,21 +130,8 @@ body {
     font-weight: bold;
     text-align: left;
     overflow: hidden;
-    font-size: 200%;
-}
-
-.text-titre2 {
-    padding: 8px;
-    padding-top: 0;
-    padding-left: 20px;
-    line-height: 15px;
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    overflow: hidden;
     font-size: 150%;
-    font-style: italic;
-    }
+}
 
 .text-partie {
     padding: 8px;
@@ -187,7 +172,7 @@ a {
 .assez-lu {
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     float: right;
     padding: 1px;
     padding-right: 20px;
@@ -197,30 +182,22 @@ a {
 .shop {
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     float: left;
     padding: 1px;
-    padding-top: 10px;
+    padding-left: 20px;
     font-size: 100%;
 }
 
-.start, .start-presse, .start-stories {
+.start {
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     float: right;
     padding: 1px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 100%;
-    }
-
-.text-box a:hover, .start:hover, .start-presse:hover, .start-stories:hover, .assez-lu:hover, .text-titre:hover, .shop:hover{
-    color: red;
-}
-
-.text p i, .red {
-    color: red;
 }
 
 .text-marge-top {
@@ -247,14 +224,8 @@ a {
     text-align: justify;
     margin-left: 20%;
     margin-right: 20%;
-}
 
-.fb-share-button {
-    margin-left: 20%;
-    margin-right: 25%;
-    float: right;
-    top: -80px;
-    left: -40px;
+
 }
 
 .pic {
@@ -451,7 +422,6 @@ footer .far {
     }
 
     .shop {
-        display: none;
         float: left;
         padding: 60px;
         padding-left: 20px;

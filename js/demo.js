@@ -12,13 +12,10 @@ $(function(){
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
 		key: "dc6zaTOxFJmzC",
-		tag: "pluton",
+		tag: "fail",
 		type: "random",
 		rating: "r"
 	};
-        
-        /**fail puke flashy**/
-        
 	// Target gif-wrap container
 	const $gif_wrap = $("#gif-wrap");
 	// Giphy API URL
@@ -77,34 +74,18 @@ $(function(){
     
     $(".start").click(function(){
         $(".header-partie").show();
-        $("#blagues li, div:not(.header, .footer, .text, .pic, .text-marge-top), .assez-lu").show(3000);
-        $("#text-blagues div, .google_translate_element, .text-marge-top").show();
-        $(".start, .start-presse, .start-stories, #gif-wrap").hide(300);
+        $(".flex-container li, div:not(.header, .footer, .text, .pic .text-marge-top), .assez-lu").show(3000);
+        $(".text, .pic, .google_translate_element, .text-marge-top").show();
+        $(".start, #gif-wrap").hide(300);
     });
 
     
-   $(".start-presse").click(function(){
-        $(".header-partie").show();
-        $("#presse li, div:not(.header, .footer, .text, .pic, .text-marge-top), .assez-lu").show(3000);
-        $("#text-presse div, .google_translate_element, .text-marge-top").show();
-        $(".start, .start-presse, .start-stories, #gif-wrap").hide(300);
-        
-    });
-   
-    $(".start-stories").click(function(){
-        $(".header-partie").show();
-        $("#stories li, div:not(.header, .footer, .text, .pic, .text-marge-top), .assez-lu").show(3000);
-        $("#text-stories div, .google_translate_element, .text-marge-top").show();
-        $(".start, .start-presse, .start-stories, #gif-wrap").hide(300);
-        
-    });
-    
-    $(".assez-lu, .text-titre").click(function(){
+    $(".assez-lu").click(function(){
         $(".text, .pic, .google_translate_element, .text-marge-top").hide();
         $(".flex-container li, div:not(.header, .footer), .assez-lu").hide(3000);
         $(".assez-lu").hide();
         $(".header-partie").hide();
-        $(".start, .start-presse,.start-stories, #gif-wrap").show(3000);
+        $(".start, #gif-wrap").show(3000);
     });
     
     
